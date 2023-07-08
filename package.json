@@ -1,0 +1,25 @@
+{
+  "name": "mason",
+  "version": "1.0.0",
+  "description": "Mason layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dush-ik/mason.git"
+  },
+  "keywords": [
+    "mason",
+    "grid",
+    "typescript",
+    "css"
+  ],
+  "author": "dush-ik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dush-ik/mason/issues"
+  },
+  "homepage": "https://github.com/dush-ik/mason#readme"
+}
