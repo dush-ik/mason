@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  grid-template-rows: masonry;
+}
+
+img {
+  width: 100%;
+}
