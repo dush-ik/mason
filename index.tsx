@@ -1,3 +1,5 @@
 import App from './src/App';
 
-App();
+const app = App();
+
+app.initialize();
