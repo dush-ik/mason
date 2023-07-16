@@ -1,6 +1,6 @@
-FROM --platform=linux/amd64 node:18.12.1-alpine
+FROM node:18.12.1-alpine as build
 
-WORKDIR /APP
+WORKDIR /app
 
 COPY ./package.json ./
 
@@ -10,4 +10,9 @@ COPY . ./
 
 RUN npm run build
 
-CMD ["npm", "run", "start"]
+FROM nginx
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf 
+
+COPY --from=build /app/dist /usr/share/nginx/html 
+
+
